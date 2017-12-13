@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BEAT托福学习联盟</title>
+	<link rel="stylesheet" type="text/css" href="./css/cooperateList.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<section>
+			<ul class="cooper_box">
+				<!--
+					<li>
+							<img src="./images/1.png"/>
+							<a href="javascript:;">
+									<span class="name">滴滴园区</span>
+									<span class="address">北京市-朝阳区-大望路</span>
+									<span class="accept">接受主投</span>
+							</a>
+					</li>-->
+			</ul>
+	</section>
+	<footer>
+		<a class="apply" href="javascript:;">申请新建园区</a>
+	</footer>
+	<script type="text/javascript">
+				$(function(){
+					for(var i=0;i<10;i++){
+						$('.cooper_box').append('<li><img src="./images/1.png"/><a href="javascript:;"><span class="name">滴滴园区</span><span class="address">北京市-朝阳区-大望路</span><span class="accept">接受主投</span></a></li>')
+					}
+				})
+	</script>
+</body>
+</html>
+

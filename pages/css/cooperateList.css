@@ -1,0 +1,131 @@
+@charset "UTF-8";
+* {
+		box-sizing: border-box; 
+		-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;
+  }
+ a,img
+ {
+ 	border-style:none;
+	text-decoration:none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+ }
+ b
+ {
+ 	font-weight: normal;
+ }
+a:hover
+{
+	text-decoration:none;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd 
+{ 
+	margin: 0px;
+	padding: 0px; 
+	font-weight: none; 
+	list-style: none;
+
+}
+html, body {
+	height: 100%;
+	font-family: "微软雅黑";
+	background-color: #f5f5f5;
+	position: relative;
+	overflow: hidden;
+}
+
+section
+{
+	width: 100%;
+	padding:0 25px;
+	height: 92.6vh;
+	overflow: auto;
+}
+/**/
+.cooper_box li
+{
+	margin:0 auto;
+	margin-top: 25px;
+	border-radius: 20px;
+	position: relative;
+}
+
+/*跳转详情页 a标签样式*/
+.cooper_box li a
+{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	box-shadow:0px -15px 70px 0px #444 inset;
+	border-radius: 20px;
+
+}
+/*图片大小*/
+.cooper_box li img
+{
+	width: 700px;
+	height: 260px;
+	border-radius: 20px;
+}
+/*名称*/
+.name
+{
+	color:white;
+	font-size: 36px;
+	position: absolute;
+	top:142px;
+	left:38px;
+}
+/*地址*/
+.address
+{
+	position: absolute;
+	font-size: 28px;
+	color:white;
+	top:200px;
+	left: 38px;
+	line-height: 36px;
+	padding-left:39px;
+	background: url('../images/local.png') no-repeat left center;
+	background-size: 30px 38px;
+}
+/*接受主投*/
+.accept
+{
+	width: 150px;
+	height: 55px;
+	position: absolute;
+	font-size: 26px;
+	line-height: 55px;
+	color:#fff;
+	right: 0;
+	bottom: 30px;
+	background-color: #af38a0;
+	border-radius: 25.25px 0px 0px 25.25px;
+	padding-left:30px;
+}
+footer
+{
+	background:url('../images/footer.png') no-repeat center center;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom:0;
+	height: 98px;
+	line-height: 98px;
+	text-align: center;
+}
+/*申请*/
+.apply
+{
+	color:#cc6600;
+	font-size: 32px;
+	padding-left:57px;
+	background: url('../images/apply.png') no-repeat left center;
+	background-size: 40px 40px;
+}
