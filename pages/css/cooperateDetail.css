@@ -33,13 +33,19 @@ html, body {
 	font-family: "微软雅黑";
 	background-color: #fff;
 	position: relative;
-	overflow: hidden;
 }
 header
 {
 	width: 100%;
 	height: 360px;
 	position: relative;
+}
+/*清除付浮动**/
+.clear_float::after
+{
+	content: '';
+	display: block;
+	clear: both;
 }
 /*接受主投*/
 .accept
@@ -94,6 +100,12 @@ section
 	font-size: 36px;
 	margin-top: 34px;
 }
+.apply::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
 .apply a
 {
 	display: inline-block;
@@ -114,4 +126,177 @@ section
 	float:right;
 	background-color: #ffd74f;
 	color:#cc6600;
+}
+/*参与人数*/ 
+.jorn_container
+{
+	margin-top: 40px;
+}
+.jorn_container>.title
+{
+	width: 100%;
+	padding:0 25px;
+	height: 80px;
+	background-color: #f7f7f3;
+	line-height: 80px;
+	color:#333;
+	font-size: 30px;
+	margin-bottom: 17px;
+}
+.jorn_container>.title>span:nth-child(1)
+{
+	padding-left:47px;
+	background:url('../images/persons.png') no-repeat left center;
+	background-size: 39px 37px;
+}
+/******/
+.jorn_container>.title>span.pointer b
+{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #d2d2d2;
+	margin-right: 13px;
+}
+/**当前页*/
+.jorn_container>.title>span.pointer b.acitve
+{
+	background-color: #ffd74f;
+}
+.jorn_container>.title>span.pointer
+{
+	float: right;
+}
+/**参加人员信息**/
+.jorn_container .person_box
+{
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+	height: 255px;
+}
+.jorn_container .person_box>ul
+{
+	overflow-x: hidden;
+	width:300%;
+	position:absolute;
+	left: 0px;
+	top:0px;
+}
+
+.jorn_container .person_box>ul li
+{
+	height: 255px;
+	width: 750px;
+	float:left;
+}
+.jorn_container .person_box>ul li::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.jorn_container .person_box>ul li>a
+{
+	display: inline-block;
+	width: 150px;
+	height: 127px;
+	padding-top: 14.5px;
+	float: left;
+	text-align: center;
+}
+.jorn_container .person_box>ul li>a>img
+{
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+}
+/*园区介绍**/
+.park_box
+{
+	margin-top: 30px;
+	font-size:30px;
+	color:#333333;
+}
+.park_title
+{
+	margin-bottom: 30px;
+}
+.park_title>span
+{
+	display: inline-block;
+
+	background: url('../images/park.png') no-repeat left center;
+	background-size: 38px 35px;
+	padding-left: 50px;
+	/*	width: 180px;*/
+}
+.park_title::before
+{	
+	content: '';
+	display: inline-block;
+	width: 275px;
+	height: 20px;
+	background: url('../images/left.png') no-repeat left center;
+}
+.park_title::after
+{
+	content: '';
+	display: inline-block;
+	width: 275px;
+	height: 20px;
+	background: url('../images/right.png') no-repeat left center;
+}
+/*园区图片展示**/
+.park_box .park_img_box
+{
+	width: 100%;
+	padding:12px 25px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.park_box .park_img_box img
+{
+	width: 332px;
+	height: 250px;
+}
+.teacher
+{
+	font-size: 28px;
+	padding: 0 25px;
+	color:#999999;
+	padding-bottom: 20px;
+}
+.teacher p:nth-child(1)
+{
+	margin-bottom: 20px;
+}
+.teacher p:nth-child(1)>b{
+	color:#333333;
+	font-weight: bold;
+}
+.living
+{
+	padding: 0 25px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.living>img
+{
+	height: 517px;
+}
+.vidio
+{
+	padding: 0 25px;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 40px;
+}
+.vidio>img
+{
+	width: 100%;
+	height: 390px;
 }

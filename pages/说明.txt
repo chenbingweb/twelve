@@ -1,0 +1,7 @@
+cooperateList.html------共建列表
+
+cooperateDetail.html------共建详情
+
+partake.html------参与共建
+
+applyMainCast.html------申请主投

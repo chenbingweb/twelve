@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>申请主投</title>
+	<link rel="stylesheet" type="text/css" href="./css/applyMainCast.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<header>
+		小拾贰百度科技园精品企托园共建
+	</header>
+	<!--提交信息-->
+	<form class="form_box">
+			<ul >
+					<li>
+							<p class="person_icon">姓名</p>
+							<p><input type="text" class="item" placeholder="请填写家长姓名" name="name"/></p>
+					</li>
+					<li>
+							<p class="phone_icon">家长电话</p>
+							<p><input type="number" class="item" placeholder="请填写家长电话" name="phone"/></p>
+					</li>
+			</ul>
+			<p class="price">
+					<span>意向金：</span><span style="font-weight:bold">￥</span><span style="font-weight:bold;font-size:42px;">229.00</span>
+			</p>
+			<p class="submit">
+				<input type="submit" value="提交并支付订金"/>
+			</p>
+	</form>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+
