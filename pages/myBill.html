@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>我的账单</title>
+	<link rel="stylesheet" type="text/css" href="./css/myBill.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="items">
+		<ul class="bill_box">
+				<li>
+						<p class="title">小拾贰百度科技园精品企托园共建</p>
+						<p class="item_info">用户名称：吴彤     共建费用：￥8000</p>
+						<p class="remark">备注信息：详细信息学费缴费详细信息学费缴费</p>
+						<a class="pay" href="javascript:;">微信支付</a>
+				</li>
+				<li>
+						<p class="title">小拾贰百度科技园精品企托园共建</p>
+						<p class="item_info">用户名称：吴彤     共建费用：￥8000</p>
+						<p class="remark">备注信息：详细信息学费缴费详细信息学费缴费</p>
+						<a class="pay" href="javascript:;">微信支付</a>
+				</li>
+				<li>
+						<p class="title">小拾贰百度科技园精品企托园共建</p>
+						<p class="item_info">用户名称：吴彤     共建费用：￥8000</p>
+						<p class="remark">备注信息：详细信息学费缴费详细信息学费缴费</p>
+						<a class="pay" href="javascript:;">微信支付</a>
+				</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>申请新建园区</title>
+	<link rel="stylesheet" type="text/css" href="./plugins/city/css/layout.min.css">
+	<link rel="stylesheet" type="text/css" href="./plugins/city/css/scs.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/applyNewArea.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<!--提交信息-->
+	<form class="form_box">
+			<ul >
+					<li>
+							<p class="person_icon">联系人</p>
+							<p><input type="text" class="item" placeholder="请填写联系人" name="name"/></p>
+					</li>
+					<li>
+							<p class="phone_icon">联系电话</p>
+							<p><input type="number" class="item" placeholder="请填写联系电话" name="phone"/></p>
+					</li>
+			</ul>
+			<div class="select_city">
+					<p class="address_icon">希望建园地点</p>
+					<p > <!--<input type="text" readonly placeholder="Click me to pick an address" id="myAddrs" class="item" name="addr" data-key="4-84-1298" value="" />--><input type="text" class="item" placeholder="请选择省-市-区" name="phone"/></p>
+					<p><input type="text" class="item" readonly placeholder="请填写您要建园的商圈" name="phone"/></p>
+			</div>
+			<p class="price">
+					<span>意向金：</span><span style="font-weight:bold">￥</span><span style="font-weight:bold;font-size:42px;">229.00</span>
+			</p>
+			<p class="collect_number">集齐<span>20</span>名家长即可达成共建组团</p>
+			<p class="submit">
+				<input type="submit" value="提交并支付订金"/>
+			</p>
+	</form>
+	<script type="text/javascript" src="./plugins/city/js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="./plugins/city/js/jquery.scs.min.js"></script>
+	<script type="text/javascript" src="./plugins/city/js/CNAddrArr.min.js"></script>
+	<script type="text/javascript"  src="./plugins/city/js/city.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+

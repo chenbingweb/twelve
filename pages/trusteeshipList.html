@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>共建列表</title>
+	<link rel="stylesheet" type="text/css" href="./css/trusteeshipList.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="list">
+	<ul id="list">
+			<li>
+					<dl>
+						<dt>
+							<a href="javascript:;">
+							<img src="./images/img/2.png">
+							<span></span>
+							</a>
+						</dt>
+						<dd>
+								<div class="info">
+										<p class="title">滴滴园区</p>
+										<p class="address one_line">北京市朝阳区大望路soho现代城</p>
+								</div>
+								<div class="join">
+										<a href="./partake.html">参与共建</a>
+								</div>
+						</dd>
+					</dl>
+			</li>
+	</ul>
+		
+
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			for(var i=0;i<10;i++){
+				$('#list').append('<li><dl><dt><a href="javascript:;"><img src="./images/img/2.png"><span></span></a></dt><dd><div class="info"><p class="title">滴滴园区</p><p class="address one_line">北京市朝阳区大望路soho现代城</p></div><div class="join"><a href="./partake.html">参与共建</a></div></dd></dl></li>')
+			}
+		})
+	</script>
+</body>
+</html>
+

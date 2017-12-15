@@ -5,3 +5,11 @@ cooperateDetail.html------共建详情
 partake.html------参与共建
 
 applyMainCast.html------申请主投
+
+applyNewArea.html-----申请新建园区
+
+trusteeshipList.html-----共建列表
+
+myPay.html-----我的缴费
+
+myBill.html-----我的账单

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>我的缴费</title>
+	<link rel="stylesheet" type="text/css" href="./css/myPay.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="items">
+		<ul class="items_box">
+			<li>
+				<dl>
+					<dt>
+						<span>共建缴费</span>
+						<span>小拾贰百度科技园精品企托园共建</span>
+					</dt>
+					<dd>
+						<ul class="item_list">
+							<li>
+								<span>申请时间：</span>
+								<span>2017-10-25    13：00</span>
+							</li>
+							<li>
+								<span>意向金额：</span>
+								<span><b>299</b>元</span>
+							</li>
+							<li>
+								<span>孩子年龄：</span>
+								<span><b>3</b>岁</span>
+							</li>
+							<li>
+								<span>孩子性别：</span>
+								<span>男</span>
+							</li>
+							<li>
+								<span>希望入园时间：</span>
+								<span>2018-10-10</span>
+							</li>
+							<li>
+								<span>家长姓名：</span>
+								<span>宋先生</span>
+							</li>
+							<li>
+								<span>家长电话：</span>
+								<span>133****2568</span>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+			
+		</ul>
+		<ul class="items_box" style="margin-top:20px;border:1px solid #dcdcdc">
+			<li>
+				<dl>
+					<dt>
+						<span>学费缴费</span>
+						<span>滴滴园区</span>
+					</dt>
+					<dd>
+						<ul class="item_list">
+							<li>
+								<span>申请时间：</span>
+								<span>2017-10-25    13：00</span>
+							</li>
+							<li>
+								<span>支付金额：</span>
+								<span><b>299</b>元</span>
+							</li>
+							<li>
+								<span>用户名称：</span>
+								<span>吴彤</span>
+							</li>
+							<li class="remarks">
+								<span>备注信息：</span>
+								<p>详细信息学费缴费详细信息学费缴费详细详细信息学费缴费详细信息学费缴费详细</p>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+
