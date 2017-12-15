@@ -52,6 +52,10 @@ input
 	background-color: #fff;
 	padding-bottom:18px;
 	border-bottom: 1px solid #dcdcdc;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
 }
 .items_box dl>dt
 {
