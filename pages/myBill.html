@@ -32,21 +32,8 @@
 		<ul class="bill_box">
 				<li>
 						<p class="title">小拾贰百度科技园精品企托园共建</p>
-						<p class="item_info">用户名称：吴彤     共建费用：￥8000</p>
-						<p class="remark">备注信息：详细信息学费缴费详细信息学费缴费</p>
-						<a class="pay" href="javascript:;">微信支付</a>
-				</li>
-
-					<li>
-						<p class="title">小拾贰百度科技园精品企托园共建</p>
-						<p class="item_info">用户名称：吴彤     共建费用：￥8000</p>
-						<p class="remark">备注信息：详细信息学费缴费详细信息学费缴费</p>
-						<a class="pay" href="javascript:;">微信支付</a>
-				</li>
-				<li>
-						<p class="title">小拾贰百度科技园精品企托园共建</p>
-						<p class="item_info">用户名称：吴彤     共建费用：￥8000</p>
-						<p class="remark">备注信息：详细信息学费缴费详细信息学费缴费</p>
+						<p class="item_info">用户名称：<span>吴彤</span>共建费用：<span>￥8000</span></p>
+						<p class="remark">备注信息：<span>详细信息学费缴费详细信息学费缴费</span></p>
 						<a class="pay" href="javascript:;">微信支付</a>
 				</li>
 		</ul>
@@ -54,7 +41,11 @@
 	</div>
 	
 	<script type="text/javascript">
-		
+			$(function(){
+				for(var i=0;i<10;i++){
+					$('.bill_box').append('<li><p class="title">小拾贰百度科技园精品企托园共建</p><p class="item_info">用户名称：<span>吴彤</span>共建费用：<span>￥8000</span></p><p class="remark">备注信息：<span>详细信息学费缴费详细信息学费缴费</span></p><a class="pay" href="javascript:;">微信支付</a></li>')
+				}
+			})
 	</script>
 </body>
 </html>

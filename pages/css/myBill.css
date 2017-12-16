@@ -49,7 +49,7 @@ input
 {
 
 }
-.bill_box div:nth-child(1){
+.bill_box li:nth-child(1){
 	border-bottom: 1px solid #e5e5e5;
 	border-top: none;
 }
@@ -101,4 +101,13 @@ input
 	line-height: 70px;
 	top:32px;
 	right: 25px;
+}
+.item_info span:nth-child(1)
+{
+	display: inline-block;
+	margin-right: 40px;
+}
+.item_info span,.remark span
+{
+	color:#999;
 }
