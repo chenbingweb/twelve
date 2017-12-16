@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>企业托管</title>
+	<link rel="stylesheet" type="text/css" href="./css/enterpriseTrusteeship.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<!--提交信息-->
+	<form class="form_box">
+			<ul >
+					<li>
+							<p class="person_icon">联系人</p>
+							<p><input type="text" class="item" placeholder="请填写联系人" name="name"/></p>
+					</li>
+					<li>
+							<p class="phone_icon">手机号</p>
+							<p><input type="number" class="item" placeholder="请填写手机号码" name="phone"/></p>
+					</li>
+					<li>
+							<p class="company">公司名称</p>
+							<p><input type="number" class="item" placeholder="请填写公司名称" name="phone"/></p>
+					</li>
+					<li>
+							<p class="need">需求描述</p>
+							<p><input type="number" class="item" placeholder="请填写您的需求" name="phone"/></p>
+					</li>
+			</ul>
+			
+			<p class="submit">
+				<input type="submit" value="提交并支付订金"/>
+			</p>
+			<div class="note">
+					<p>您可以联系我们的客服：010-0011-1111</p>
+					<p>或提交您的需求我们会尽快联系您！</p>
+			</div>
+			
+	</form>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+

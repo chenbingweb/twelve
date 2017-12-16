@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>奖励规则</title>
+	<link rel="stylesheet" type="text/css" href="./css/sharePoster.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="poster">
+			<span class="logo"></span>
+			<span class="poster_title"></span>
+			<span>长按识别二维码</span>
+			<span class="now"></span>
+			<span>（仅限首次新用户 )</span>
+			<a class="rule_btn" href="./rule.html">查看奖励规则</a>
+			<p class="code">
+					<img src="./images/code.jpg"/>
+					<span>15501054070</span>
+			</p>
+		</div>
+		<div class="poster_footer">
+			<p>你的好友 <img class="photo" src="./images/img/1.jpg"/> 大萌萌</p>
+			<p>邀请你来参加：</p>
+			<p>不仅有趣还免费的小拾贰外教课</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+

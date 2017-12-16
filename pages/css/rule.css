@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+		box-sizing: border-box; 
+		-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;
+  }
+ a,img
+ {
+ 	border-style:none;
+	text-decoration:none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+ }
+ input[type="submit"],
+ input[type="reset"],
+ input[type="button"],
+ button {
+ -webkit-appearance: none;
+ }
+ b
+ {
+ 	font-weight: normal;
+ }
+a:hover
+{
+	text-decoration:none;
+}
+.clear_float::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd 
+{ 
+	margin: 0px;
+	padding: 0px; 
+	font-weight: none; 
+	list-style: none;
+
+}
+html, body {
+	font-family: "微软雅黑";
+	background: url('../images/bg.png') no-repeat 0 0;
+	background-size: 100% 100%;
+	position: relative;
+}
+input
+{
+	outline: none;
+	border:none;
+}
+.container
+{
+	padding-top: 37px;
+}
+.rule_box li
+{
+	width: 100%;
+	padding: 0 30px;
+	margin-bottom: 35px;
+}
+.rule_box li>p
+{
+	width: 404px;
+	height: 81px;
+	border-radius: 10px;
+	margin-bottom: 25px;
+	display: flex;
+	display: -webkit-flex;
+}
+.rule_box li:nth-child(1)>p
+{
+	background:#ffffff url(../images/r1.png) no-repeat center center;
+}
+.rule_box li:nth-child(2)>p
+{
+	width: 300px;
+	background:#ffffff url(../images/r2.png) no-repeat center center;
+}
+.rule_box li:nth-child(3)>p
+{
+	width: 300px;
+	background:#ffffff url(../images/r3.png) no-repeat center center;
+}
+.rule_box li:nth-child(4)>p
+{
+	width: 300px;
+	background:#ffffff url(../images/r4.png) no-repeat center center;
+}
+.rule_box li:nth-child(5)>p
+{
+	width: 230px;
+	background:#ffffff url(../images/r5.png) no-repeat center center;
+}
+
+.rule_box li>div
+{
+	padding:30px 30px;
+	background-color: #ffffff;
+	color:#993399;
+	font-size: 30px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+
+}
+.rule_box li:nth-child(1)>div p:nth-child(2) 
+{
+	margin-top: 10px;
+}
+.share_icon,.send_icon
+{
+	display: inline-block;
+	width: 58px;
+	height: 58px;
+	border-radius: 10px;
+	background-color: #fcfafa;
+	box-sizing: border-box;	
+	margin-left: 16px;
+}
+.send_icon
+{
+	background: #fcfafa url('../images/share_1.png') no-repeat center center;
+}
+.share_icon
+{
+	background: #fcfafa url('../images/share_2.png') no-repeat center center;
+}
+.rule_box li:nth-child(1)>div p:nth-child(2) a
+{
+	float: right;
+	display: inline-block;
+	width: 154px;
+	height: 68px;
+	line-height: 68px;
+	text-align: center;
+	background-color: #f5f5f5;
+	color:#666;
+	font-size: 24px;
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+

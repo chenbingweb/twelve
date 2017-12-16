@@ -48,11 +48,11 @@
 			<p class="title">
 					<span>参与人数</span>
 					<span class="pointer">
-							<b  class="acitve"></b><b></b><b></b>
+							<!-- <b  class="acitve"></b><b></b><b></b> -->
 					</span>
 			</p>
 			<div class="person_box">
-				<ul>
+				<ul id="swiper">
 							<li >
 									<a href="javascript:;">
 											<img src="./images/img/1.jpg">
@@ -87,10 +87,42 @@
 							</li>
 							<li >
 									<a href="javascript:;">
+											<img src="./images/img/3.jpg">
+									</a>
+									<a href="javascript:;">
 											<img src="./images/img/2.jpg">
 									</a>
 									<a href="javascript:;">
 											<img src="./images/img/2.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/2.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/2.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/2.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/2.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/1.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/1.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/1.jpg">
+									</a>
+							</li>
+							<li >
+									<a href="javascript:;">
+											<img src="./images/img/4.jpg">
+									</a>
+									<a href="javascript:;">
+											<img src="./images/img/5.jpg">
 									</a>
 									<a href="javascript:;">
 											<img src="./images/img/2.jpg">
@@ -158,8 +190,10 @@
 				<img src="./images/img/6.png">
 		</div>
 	</div>
+	<script type="text/javascript" src="./js/swiper.js"></script>
 	<script type="text/javascript">
-
+			var swiper=new Swiper('#swiper','.pointer');
+			swiper.init()
 	</script>
 </body>
 </html>

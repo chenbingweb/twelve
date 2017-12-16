@@ -1,0 +1,179 @@
+@charset "UTF-8";
+* {
+		box-sizing: border-box; 
+		-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;
+		margin:0px; padding:0px;
+  }
+ a,img
+ {
+ 	border-style:none;
+	text-decoration:none;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+
+ }
+ input[type="submit"],
+ input[type="reset"],
+ input[type="button"],
+ button {
+ -webkit-appearance: none;
+ }
+ b
+ {
+ 	font-weight: normal;
+ }
+a:hover
+{
+	text-decoration:none;
+}
+.clear_float::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd 
+{ 
+	margin: 0px;
+	padding: 0px; 
+	font-weight: none; 
+	list-style: none;
+
+}
+html, body {
+	font-family: "微软雅黑";
+	background: #efb027;
+	background-size: 100% 100%;
+	position: relative;
+}
+input
+{
+	outline: none;
+	border:none;
+}
+.container
+{
+	padding:50px;
+
+}
+.poster
+{
+	width: 650px;
+	height: 944px;
+	background-color: #fff;
+	position: relative;
+	background:#fff url('../images/perImg.jpg') no-repeat top center;
+}
+.logo
+{
+	width: 142px;
+	height: 160px;
+	display: inline-block;
+	background:white url('../images/logo.png') no-repeat center center;
+	position: absolute;
+	left: 0;
+	top:38px;
+}
+.person
+{
+	display: inline-block;
+
+}
+.poster_title
+{
+	display: inline-block;
+	width: 477px;
+	height: 84px;
+	background:#efb027 url('../images/poster_1.png') no-repeat center center;
+	position: absolute;
+	top:37px;
+	right: 0px;
+	border-radius:42px 0 0 42px; 
+}
+.poster span:nth-child(3)
+{
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	color:#333;
+	font-size: 30px;
+	left:40px;
+	bottom: 218px;
+}
+.poster .now
+{
+	display: inline-block;
+	width: 475px;
+	height: 40px;
+	background:url('../images/poster_2.png') no-repeat center center;
+	position: absolute;
+	left:40px;
+	bottom:163px;
+}
+.poster span:nth-child(5)
+{
+	position: absolute;
+	color:#999;
+	font-size: 26px;
+	left:32px;
+	bottom: 122px;
+}
+.rule_btn
+{
+	display: inline-block;
+	width: 210px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #efb027;
+	text-align: center;
+	color:#ffffff;
+	font-size: 26px;
+	position: absolute;
+	left:40px;
+	bottom: 40px;
+	border-radius: 8px;
+}
+.code
+{
+	width: 236px;
+	height: 237px;
+	text-align: center;
+	border:15px solid  #efb027;
+	position: absolute;
+	right:0px;
+	bottom: -176px;
+	background-color: white;
+	padding-top: 23px;
+	outline: none;
+	box-sizing: content-box;
+
+}
+.code>img
+{
+	margin: 0;
+	padding:0;
+	width: 194px;
+	height: 194px;
+}
+.code>span
+{
+	color:#666666;
+	font-size: 24px;
+	background: url('../images/phone_p.png') no-repeat left center;
+	padding-left: 36px;
+}
+.poster_footer
+{
+	color: #fff;
+	font-size: 26px;
+	margin-top: 28px;
+}
+.poster_footer .photo
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid white;
+}

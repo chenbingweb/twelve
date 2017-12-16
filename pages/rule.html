@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>奖励规则</title>
+	<link rel="stylesheet" type="text/css" href="./css/rule.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+			<ul class="rule_box">
+					<li>
+							<p></p>
+							<div>
+								<p>保存海报到手机，把海报分享到朋友圈或者妈妈群也可以将链接分享到朋友圈或者妈妈群</p>
+								<p class="clear_float">
+										<a href="javascript:;">
+											<span>分享</span>
+											<span class="share_icon"></span>
+										</a>
+										<a href="javascript:;">
+											<span>发送</span>
+											<span class="send_icon"></span>
+										</a>
+								</p>
+							</div>
+					</li>
+					<li>
+							<p></p>
+							<div>好友扫码或点击链接后提示关注公众号，好友关注后，将成为您的被推荐人</div>
+					</li>
+					<li>
+							<p></p>
+							<div>好友提交信息并支付定金后会奖励你1天学时可在我的账户     分享奖励中查看</div>
+					</li>
+					<li>
+							<p></p>
+							<div>好友成功参与共建或成功申请入托后系统会奖励你一个月学时，可在我的账户    分享奖励中查看</div>
+					</li>
+					<li>
+							<p></p>
+							<div>孩子入学时，向管理人员提供相应奖励学时，由管理人员进行抵消</div>
+					</li>
+			</ul>
+	</div>
+	
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
+

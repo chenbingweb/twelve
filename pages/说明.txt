@@ -15,3 +15,11 @@ myPay.html-----我的缴费
 myBill.html-----我的账单
 
 shareReward.html----分享奖励
+
+enterpriseTrusteeship.html ----企业托管
+
+submintSucc.html ----提交成功
+
+paySucc.html ----支付成功
+
+rule.html ----奖励规则
