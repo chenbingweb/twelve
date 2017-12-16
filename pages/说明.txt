@@ -13,3 +13,5 @@ trusteeshipList.html-----共建列表
 myPay.html-----我的缴费
 
 myBill.html-----我的账单
+
+shareReward.html----分享奖励

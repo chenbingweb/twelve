@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>分享奖励</title>
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<link rel="stylesheet" type="text/css" href="./css/shareReward.css">
+	<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" >
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w/targetW; //当前尺寸/目标尺寸
+			var meta = document.createElement("meta");
+			meta.name = "viewport";
+			meta.content = "width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+""
+			document.head.appendChild(meta);
+		})();
+		$(function(){
+			var targetW =750;
+			$(window).resize(function(){
+				var w = window.screen.width;
+				var scale = w/targetW; //当前尺寸/目标尺寸
+				$('meta[name = "viewport"]').attr('content',"width=device-width, user-scalable=no,initial-scale="+scale+",minimum-scale="+scale+",maximum-scale="+scale+"")
+			});
+		})
+	</script>
+
+</head>
+<body>
+	<header>
+			<p class="title">总学时</p>
+			<p class="days"><b>12</b>天</p>
+	</header>	
+	<ul class="share_list">
+		<li>
+			<div>
+				<p>
+					<img class="photo" src="./images/img/1.jpg"/>
+					<span class="user_name">北葵向暖</span>
+					<span class="remark">提交信息</span>
+				</p>		
+				<p>+1天学时</p>
+			</div>
+			<p>
+				<span>望京园区建园活动</span>
+				<span>2017-10-25 13：00</span>
+			</p>
+		</li>
+		<li>
+			<div>
+				<p>
+					<img class="photo" src="./images/img/1.jpg"/>
+					<span class="user_name">北葵向暖</span>
+					<span class="remark">提交信息</span>
+				</p>		
+				<p>+1天学时</p>
+			</div>
+			<p>
+				<span>望京园区建园活动</span>
+				<span>2017-10-25 13：00</span>
+			</p>
+		</li>
+	</ul>
+	<script type="text/javascript">
+			$(function(){
+				for(var i=0;i<10;i++){
+					$('.share_list').append('<li><div><p><img class="photo" src="./images/img/1.jpg"/><span class="user_name">北葵向暖</span><span class="remark">提交信息</span></p>		<p>+1天学时</p></div><p><span>望京园区建园活动</span><span>2017-10-25 13：00</span></p></li>')
+				}
+			})
+	</script>
+</body>
+</html>
+
