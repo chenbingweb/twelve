@@ -81,7 +81,7 @@ $(function() {
         //bind the click event for 'input' element
 
         $("#myAddrs").click(function() {
-
+             $("#myAddrs").blur()
             var PROVINCES = [],
 
                 startCities = [],

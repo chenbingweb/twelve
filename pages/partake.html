@@ -44,9 +44,12 @@
 								<label for="girl">女</label>
 							</p>
 					</li>
-					<li>
+					<li  >
 							<p class="date_icon">希望入托日期</p>
-							<p><input type="text" class="age" placeholder="请填写希望入托日期" name="date"/></p>
+							<p class="select_date">
+								<input type="text" class="age" id="selectDate" readonly placeholder="请填写希望入托日期" name="date"/>
+								<input type="date" class="date" />
+							</p>
 					</li>
 					<li>
 							<p class="person_icon">家长姓名</p>
@@ -66,7 +69,13 @@
 			</p>
 	</form>
 	<script type="text/javascript">
-		
+		$(function(){
+			/*选择日期*/
+			$('input[type="date"]').change(function(){
+					console.log($(this).val())
+					$('#selectDate').val($(this).val())
+			})
+		})
 	</script>
 </body>
 </html>

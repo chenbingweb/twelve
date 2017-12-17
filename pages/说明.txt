@@ -23,3 +23,5 @@ submintSucc.html ----提交成功
 paySucc.html ----支付成功
 
 rule.html ----奖励规则
+
+sharePoster.html---分享奖励
